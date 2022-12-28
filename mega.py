@@ -7,7 +7,7 @@ Created on Tue Dec 27 16:56:20 2022
 import pandas as pd
 from itertools import combinations 
 
-df = pd.read_excel(r"C:\Users\lucas\Downloads\resultadosmega.xlsx")
+df = pd.read_excel("resultadosmega.xlsx")
 
 df['Data'] = pd.to_datetime(df['Data'], format="%d/%m/%Y")
 
