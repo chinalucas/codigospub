@@ -1,0 +1,12 @@
+import pandas as pd
+
+import basedosdados as bd
+
+# Para carregar o dado direto no pandas
+df = bd.read_table(dataset_id='br_me_estoque_divida_publica',
+table_id='microdados',
+billing_project_id="valued-aleph-373219")
+
+df.to_excel(r'C:local', index=False)
+
+print(df)
